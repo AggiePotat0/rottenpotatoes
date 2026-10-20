@@ -4,16 +4,18 @@ class MoviesController < ApplicationController
   # GET /movies or /movies.json
   def index
     allowed_columns = %w[title rating release_date]
-    
+
     requested_sort = params[:sort] || session[:sort]
     requested_direction = params[:direction] || session[:direction]
-    
-    
+
     sort_column = allowed_columns.include?(requested_sort) ? requested_sort : "title"
     direction = %w[asc desc].include?(requested_direction) ? requested_direction : "asc"
-    
+
     session[:sort] = sort_column
     session[:direction] = direction
+
+    @sort_column = sort_column
+    @sort_direction = direction
 
     @movies = Movie.order(sort_column => direction)
   end

@@ -8,3 +8,18 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+th.sorted-asc {
+  background-color: #d8f3dc;
+  color: #163b27;
+}
+
+th.sorted-desc {
+  background-color: #dbeafe;
+  color: #183b73;
+}
+
+th.sorted-asc a,
+th.sorted-desc a {
+  color: inherit;
+}
