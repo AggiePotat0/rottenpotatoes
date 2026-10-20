@@ -19,9 +19,18 @@ more_movies = [
   {:title => 'Nomadland', :rating => 'R',
     :release_date => '19-Feb-2021'},
   {:title => 'CODA', :rating => 'PG-13',
-    :release_date => '13-Aug-2021'}
+    :release_date => '13-Aug-2021'},
+  {:title => 'Marty Supreme', :rating => 'R',
+    :release_date => '25-Dec-2025'},
+  {:title => 'Spider-Man: Homecoming', :rating => 'PG-13',
+    :release_date => '07-Jul-2017'},
+  {:title => 'Chainsaw Man - The Movie: Reze Arc', :rating => 'R',
+    :release_date => '19-Sep-2025'}
 ]
 
 more_movies.each do |movie|
-  Movie.create!(movie)
+  Movie.find_or_create_by!(title: movie[:title]) do |record|
+    record.rating = movie[:rating]
+    record.release_date = movie[:release_date]
+  end
 end
