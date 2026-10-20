@@ -1,11 +1,15 @@
+
 <% content_for :title, "New movie" %>
 
-<h1>New movie</h1>
+<div class="movie-page">
+  <h1>Add a New Movie</h1>
+  <p class="page-subtitle">Enter the movie details below.</p>
 
-<%= render "form", movie: @movie %>
+  <div class="movie-card">
+    <%= render "form", movie: @movie %>
+  </div>
 
-<br>
-
-<div>
-  <%= link_to "Back to movies", movies_path %>
+  <div class="movie-actions">
+    <%= link_to "← Back to movies", movies_path, class: "action-link" %>
+  </div>
 </div>

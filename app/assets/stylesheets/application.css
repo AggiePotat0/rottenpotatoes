@@ -23,3 +23,73 @@ th.sorted-asc a,
 th.sorted-desc a {
   color: inherit;
 }
+
+
+/* Shared movie page layout */
+.movie-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.movie-page h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.page-subtitle {
+  color: #555;
+  margin-bottom: 24px;
+}
+
+/* Movie detail and form cards */
+.movie-card {
+  background-color: #f8fafc;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form fields */
+.movie-card input,
+.movie-card select,
+.movie-card textarea {
+  max-width: 100%;
+  padding: 10px;
+  margin: 6px 0 14px;
+  border: 1px solid #9ca3af;
+  border-radius: 6px;
+}
+
+/* Navigation and actions */
+.movie-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.action-link {
+  color: #1d4ed8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.action-link:hover {
+  text-decoration: underline;
+}
+
+.delete-button {
+  background-color: #b91c1c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #991b1b;
+}
