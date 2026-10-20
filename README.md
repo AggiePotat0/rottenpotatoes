@@ -1,24 +1,18 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# RottenPotatoes
 
-Things you may want to cover:
+Programming Assignment 2
 
-* Ruby version
+## Deployed Application
 
-* System dependencies
+https://rocky-cliffs-73384.herokuapp.com
 
-* Configuration
+## About
 
-* Database creation
+A Ruby on Rails movie management application that supports:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Viewing movies in a sortable table
+- Sorting by title, rating, and release date
+- Ascending and descending sorting
+- Remembering sorting preferences between pages
+- Creating, editing, viewing, and deleting movies
